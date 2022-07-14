@@ -1,0 +1,19 @@
+<button type="submit" id="logoutbtn" (click)="logout()">Logout</button>
+<h1>Welcome ! Choose a game or feed</h1>
+<div class="wrapper">
+    <div class="three"><button class="b-help" type="submit" (click)="game1()">Bitcoin news</button></div>
+    <div class="four"><button class="b-help" type="submit" (click)="game2()">Rock Paper Scissor</button></div>
+    <div class="five"><button class="b-help" >Whack a mole</button></div>
+    <div class="six"><button class="b-help" type="submit" (click)="game4()">Quick Quiz</button></div>
+</div>
+<div class="pushelp">
+    <button type="submit" (click)="learn()">Learn more</button>
+</div>
+<div *ngFor = 'let data of username'>
+    <h3>Name: {{data.name}}</h3>
+    <h4>Website : {{data.website}}</h4>
+</div>
+<div *ngFor = 'let data of view'>
+    <h3>Title : {{data.title}}</h3>
+    <h4>Picture : <br><img src="{{data.url}}"></h4>
+</div>

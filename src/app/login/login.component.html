@@ -1,0 +1,29 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<h2>Login Form</h2>
+    <!--Step 1 : Adding HTML-->
+    <form action="/action_page.php">
+        <div class="imgcontainer">
+            <img src=
+"https://blog.myetv.tv/wp-content/uploads/2022/03/CUSTOM-LOGO_3ughuetrgreutg-1024x1024.jpg"
+                 alt="Avatar" class="avatar">
+        </div>
+ 
+        <div class="container">
+            <form ngNativeValidate>
+            <label><b>Username</b></label>
+            <input type="text" required placeholder="Enter Username" name="uname" required [(ngModel)]="username" required>
+ 
+            <label><b>Password</b></label>
+            <input id="pas" required type="password" placeholder="Enter Password" name="psw" required [(ngModel)]="password" required>
+ 
+            <button type="submit" (click)="login()">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+            <!-- <a href="./login.component.html">Register</a> -->
+            </form>
+            <button class="register-button" (click)="register()">Create one</button>
+        </div>
+    </form>
+
+    

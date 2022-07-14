@@ -1,0 +1,112 @@
+<button class="classButton" (click)="back()">Back</button>
+<h1>Bitcoin currency datas from Binance</h1>
+<div *ngFor = 'let data of username'>
+    <h3>Crypto Name: {{data.symbol}}</h3>
+    <!-- <h4>Website : {{data.priceChange}}</h4> -->
+    <table>
+        <tr>
+            <td><b>askPrice</b></td>
+            <td>{{data.askPrice}}</td>
+        </tr>
+        <tr>
+            <td><b>askQty</b></td>
+            <td>{{data.askQty}}</td>
+        </tr>
+        <tr>
+            <td><b>bidPrice</b></td>
+            <td>{{data.bidPrice}}</td>
+        </tr>
+        <tr>
+            <td><b>bidQty</b></td>
+            <td>{{data.bidQty}}</td>
+        </tr>
+        <tr>
+            <td><b>closeTime</b></td>
+            <td>{{data.closeTime}}</td>
+        </tr>
+        <tr>
+            <td><b>count</b></td>
+            <td>{{data.count}}</td>
+        </tr>
+        <tr>
+            <td><b>firstId</b></td>
+            <td>{{data.firstId}}</td>
+        </tr>
+        <tr>
+            <td><b>highPrice</b></td>
+            <td>{{data.highPrice}}</td>
+        </tr>
+        <tr>
+            <td><b>lastId</b></td>
+            <td>{{data.lastId}}</td>
+        </tr>
+        <tr>
+            <td><b>lastPrice</b></td>
+            <td>{{data.lastPrice}}</td>
+        </tr>
+        <tr>
+            <td><b>lastQty</b></td>
+            <td>{{data.lastQty}}</td>
+        </tr>
+        <tr>
+            <td><b>lowPrice</b></td>
+            <td>{{data.lowPrice}}</td>
+        </tr>
+        <tr>
+            <td><b>openPrice</b></td>
+            <td>{{data.openPrice}}</td>
+        </tr>
+        <tr>
+            <td><b>openTime</b></td>
+            <td>{{data.openTime}}</td>
+        </tr>
+        <tr>
+            <td><b>prevClosePrice</b></td>
+            <td>{{data.prevClosePrice}}</td>
+        </tr>
+        <tr>
+            <td><b>PriceChange</b></td>
+            <td>{{data.priceChange}}</td>
+        </tr>
+        <tr>
+            <td><b>priceChangePercent</b></td>
+            <td>{{data.priceChangePercent}}</td>
+        </tr>
+        <tr>
+            <td><b>quoteVolume</b></td>
+            <td>{{data.quoteVolume}}</td>
+        </tr>
+        <tr>
+            <td><b>volume</b></td>
+            <td>{{data.volume}}</td>
+        </tr>
+        <tr>
+          <td><b>weightedAvgPrice</b></td>
+          <td>{{data.weightedAvgPrice}}</td>
+        </tr>
+      </table>
+</div>
+
+<!-- JSON Format -->
+
+<!-- askPrice: "0.05508000" -->
+<!-- askQty: "10.83000000" -->
+<!-- bidPrice: "0.05507900" -->
+<!-- bidQty: "12.04170000" -->
+<!-- closeTime: 1657781221795 -->
+<!-- count: 253833 -->
+<!-- firstId: 355032800 -->
+<!-- highPrice: "0.05523000" -->
+<!-- lastId: 355286632 -->
+<!-- lastPrice: "0.05508000" -->
+<!-- lastQty: "3.52110000" -->
+<!-- lowPrice: "0.05320200" -->
+<!-- openPrice: "0.05425400" -->
+<!-- openTime: 1657694821795 -->
+<!-- prevClosePrice: "0.05425400" -->
+<!-- priceChange: "0.00082600" -->
+<!-- priceChangePercent: "1.522" -->
+<!-- quoteVolume: "9618.30309694" -->
+<!-- symbol: "ETHBTC" -->
+<!-- volume: "176811.64680000" -->
+<!-- weightedAvgPrice: "0.05439858" -->

@@ -1,0 +1,83 @@
+*{
+    align-items: center;
+}
+#logoutbtn{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 7%;
+}
+#logoutbtn:hover{
+    background-color: lightgreen;
+    color: black;
+}
+h1{
+    text-align: center;
+    margin-top: 25px;
+}
+//grid
+.wrapper {
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.three {
+    grid-column:2;
+    grid-row: 1;
+}
+.four {
+    grid-column: 3;
+    grid-row: 1;
+}
+.five {
+    grid-column: 2;
+    grid-row: 2;
+}
+.six {
+    grid-column: 3;
+    grid-row: 2;
+}
+.b-help{
+    background-color: red;
+}
+//learn button
+.pushelp{
+    margin-left: 33.33%;
+}
+button{
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+button:hover{
+    background-color:#FFCCCB;
+    color: black;
+}
+@media screen and (max-width:768px){
+    .wrapper {
+        margin-right: 18%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .b-help{
+        width: 80%;
+        height: 80px;
+    }#logoutbtn{
+        width: 25%;
+        font-size: 16px;
+    }
+}

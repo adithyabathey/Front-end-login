@@ -1,0 +1,28 @@
+//back button
+.classButton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.classButton:hover{
+    background-color: lightgreen;
+    color: black;
+}
+//title
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+//form box
+form{
+    border: 2px solid black;
+    padding-bottom: 10px;
+    padding-left: 35px;
+}
+
