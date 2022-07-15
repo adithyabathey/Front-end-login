@@ -1,19 +1,50 @@
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 <button type="submit" id="logoutbtn" (click)="logout()">Logout</button>
-<h1>Welcome ! Choose a game or feed</h1>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<h1>Welcome ! Choose a game or a feed</h1>
 <div class="wrapper">
     <div class="three"><button class="b-help" type="submit" (click)="game1()">Bitcoin news</button></div>
     <div class="four"><button class="b-help" type="submit" (click)="game2()">Rock Paper Scissor</button></div>
-    <div class="five"><button class="b-help" >Whack a mole</button></div>
+    <div class="five"><button class="b-help" type="submit" (click)="game3()" >Whack a mole</button></div>
     <div class="six"><button class="b-help" type="submit" (click)="game4()">Quick Quiz</button></div>
 </div>
 <div class="pushelp">
-    <button type="submit" (click)="learn()">Learn more</button>
+    <button type="submit" class="learn-btn" (click)="learn()">Learn more</button>
 </div>
-<div *ngFor = 'let data of username'>
+<!-- <div *ngFor = 'let data of username'>
     <h3>Name: {{data.name}}</h3>
     <h4>Website : {{data.website}}</h4>
 </div>
 <div *ngFor = 'let data of view'>
     <h3>Title : {{data.title}}</h3>
     <h4>Picture : <br><img src="{{data.url}}"></h4>
-</div>
+</div> -->

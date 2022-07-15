@@ -25,6 +25,9 @@ export class HomepageComponent implements OnInit {
   game2(){
     this.router.navigate(['homepage/rock-paper-scissor']);
   }
+  game3(){
+    this.router.navigate(['homepage/whack-mole']);
+  }
   game4(){
     this.router.navigate(['homepage/quiz']);
   }

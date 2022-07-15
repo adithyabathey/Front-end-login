@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { RockpaperscissorComponent } from './rockpaperscissor/rockpaperscissor.component';
 import { AuthGuard } from './service/authguard.service';
 import { StockComponent } from './stock/stock.component';
+import { WhackMoleComponent } from './whack-mole/whack-mole.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path:'homepage/stock',canActivate: [AuthGuard],
     component:StockComponent
+  },
+  {
+    path:'homepage/whack-mole',canActivate: [AuthGuard],
+    component:WhackMoleComponent
   }
 ];
 

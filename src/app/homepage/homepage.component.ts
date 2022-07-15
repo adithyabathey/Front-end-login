@@ -48,13 +48,18 @@ export class HomepageComponent implements OnInit {
     localStorage.removeItem('user');
   }
   learn(){
-    this.router.navigate(['register']);
+    // this.router.navigate(['register']);
+    let myDialog:any = <any>document.getElementById("myDialog");
+    myDialog.showModal();
   }
   game1(){
     this.router.navigate(['homepage/stock']);
   }
   game2(){
     this.router.navigate(['homepage/rock-paper-scissor']);
+  }
+  game3(){
+    this.router.navigate(['homepage/whack-mole']);
   }
   game4(){
     this.router.navigate(['homepage/quiz']);

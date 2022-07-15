@@ -1,3 +1,4 @@
+//back button
 .classButton{
     background-color: #4CAF50; /* Green */
     border: none;
@@ -13,28 +14,23 @@
     background-color: lightgreen;
     color: black;
 }
-h1{
+//body
+body{
     text-align: center;
 }
-h3{
-    text-align: center;
+.grid{
+    padding-left: 520px;
+    width: 456px;
+    height: 456px;
+    display: flex;
+    flex-wrap: wrap;
 }
-table, th, td{
-    width: 33%;
-    margin-left: 33%;
-    border: 1px solid;
+.square{
+    width: 150px;
+    height: 150px;
+    border: solid 1px black;
 }
-
-
-@media screen and (max-width:768px){
-    table{
-        font-size: 12px;
-        margin-left: 16.5%;
-    }
-}
-
-@media screen and (min-width:768px){
-    table{
-        margin-left: 33%;
-    }
+.mole{
+    background-image: url(./mole.jpg);
+    background-size: cover;
 }

@@ -13,6 +13,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './service/authguard.service';
 import { StockComponent } from './stock/stock.component';
+import { WhackMoleComponent } from './whack-mole/whack-mole.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { StockComponent } from './stock/stock.component';
     HomepageComponent,
     RockpaperscissorComponent,
     QuizComponent,
-    StockComponent
+    StockComponent,
+    WhackMoleComponent
   ],
   imports: [
     BrowserModule,
