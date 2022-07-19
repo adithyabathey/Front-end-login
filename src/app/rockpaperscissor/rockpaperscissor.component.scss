@@ -38,12 +38,12 @@ h1{
   #user-label{
     position: absolute;
     top: 5px;
-    left: -25px;
+    left: -90px;
   }
   #comp-label{
     position: absolute;
     top: 5px;
-    right: -25px;
+    right: -90px;
   }
   
   
@@ -87,4 +87,14 @@ h1{
     .result{
         font-size: 20px;
     }
+    #user-label{
+      position: absolute;
+      top: 5px;
+      left: -60px;
+    }
+    #comp-label{
+      position: absolute;
+      top: 5px;
+      right: -60px;
+    }  
 }

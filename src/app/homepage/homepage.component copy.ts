@@ -13,7 +13,7 @@ export class HomepageComponent implements OnInit {
   ngOnInit(): void {
   }
   learn(){
-    this.router.navigate(['homepage/register']);
+    // this.router.navigate(['homepage/register']);
   }
   logout(){
     this.router.navigate(['login']);

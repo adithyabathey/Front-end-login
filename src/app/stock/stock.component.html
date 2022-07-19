@@ -1,5 +1,6 @@
 <button class="classButton" (click)="back()">Back</button>
 <h1>Bitcoin currency datas from Binance</h1>
+<br>
 <div *ngFor = 'let data of username'>
     <h3>Crypto Name: {{data.symbol}}</h3>
     <!-- <h4>Website : {{data.priceChange}}</h4> -->
@@ -85,6 +86,7 @@
           <td>{{data.weightedAvgPrice}}</td>
         </tr>
       </table>
+      <br><br>
 </div>
 
 <!-- JSON Format -->

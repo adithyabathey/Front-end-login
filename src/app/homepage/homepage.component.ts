@@ -23,24 +23,19 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit(): void {
     this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((result:any)=>{
-      console.log(result);
+      // console.log(result);
       this.username = result
       var name = result.filter((e:any)=> e.username == 'Delphine')
       console.log(name);
       for(let i=0; i<result.length; i++){
-        
         console.log(result[i].username);
-     
       }
     })
     this.http.get('https://jsonplaceholder.typicode.com/photos').subscribe((res:any)=>{
-      console.log(res);
+      // console.log(res);
       this.title=res;
       res=res.filter((e:any)=>e.id<=3);
       this.view=res;
-      for(let i=0; i<10; i++){
-        console.log(res[i].title);
-      }
     })
   }
   logout(){
