@@ -37,10 +37,10 @@ export class AuthService {
            return true;
     }
 
-    // if(help==0){
-    //   alert("incorrect password")
-    //   return false;
-    // }
+    if(help==0){
+      alert("incorrect password")
+      return false;
+    }
     } 
     return false; 
   }
