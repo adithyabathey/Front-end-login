@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   message: string;
   loggedIn = false;
   username:any;
-  password:any;
+  passwor:any;
   user:any=[];
   employees: any;
   constructor(private authService: AuthService, private router: Router,private http:HttpClient) { this.message = '';
@@ -37,14 +37,21 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['register']);
   }
   login(){
-    console.log(this.username, this.password);
+    console.log(this.username, this.passwor);
+    let help=1;
     for(var i=0;i<this.employees.length;i++){
       if((this.employees[i].Name).toLowerCase() == this.username.toLowerCase() && 
-      (this.employees[i].EmpCode).toLowerCase() == this.password.toLowerCase()){
+      (this.employees[i].password).toLowerCase() == this.passwor.toLowerCase()){
+        help=0;
         localStorage.setItem('user', this.user);
-        localStorage.setItem('user', this.password);
+        localStorage.setItem('user', this.passwor);
         this.router.navigate(['/homepage']);
       }
+    }
+    if(help){
+      this.username='';
+      this.passwor='';
+      alert('invalid username or password');
     }
     // this.authService.login(this.username, this.password)
     // if(!this.authService.login(this.username, this.password)){
