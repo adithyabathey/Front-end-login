@@ -13,15 +13,15 @@
 		</div>
 		<form class="card-form" ngNativeValidate>
 			<div class="input">
-                <input type="text" class="input-field" value="Yourname"  [(ngModel)]="firstName" [ngModelOptions]="{standalone: true}" required/>
+                <input type="text" class="input-field" value="Yourname"  [(ngModel)]="Name" [ngModelOptions]="{standalone: true}" required/>
 				<label class="input-label">Full name</label>
 			</div>
 			<div class="input">
-				<input type="text" class="input-field" value="youremail@gmail.com" [(ngModel)]="pass" [ngModelOptions]="{standalone: true}" required/>
+				<input type="text" class="input-field" value="youremail@gmail.com" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" required/>
 				<label class="input-label">Email</label>
 			</div>
 			<div class="input">
-				<input type="password" class="input-field" required/>
+				<input type="password" class="input-field" [(ngModel)]="pass" [ngModelOptions]="{standalone: true}" required/>
 				<label class="input-label">Password</label>
 			</div>
 			<div class="action">
